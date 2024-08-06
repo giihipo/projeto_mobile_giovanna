@@ -57,3 +57,16 @@ button[type="submit"] {
 button[type="submit"]:hover {
   background-color: #3e8e41;
 }
+table{
+
+ width:100%;
+ border-collapse:collapse;
+ margin-top:20px;
+
+}
+th,td{
+  padding:10px;
+  text-aling:left;
+  border-bottom:1px salid #ddd
+
+  }
