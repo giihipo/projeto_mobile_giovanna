@@ -1,1 +1,1 @@
-# projeto_mobile_giovanna
+# projeto_site_giovanna
