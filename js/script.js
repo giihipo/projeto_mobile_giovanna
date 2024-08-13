@@ -1,6 +1,6 @@
 var meuFormulario = document.getElementById("formulario");
 meuFormulario.addEventListener("submit", function(event) {
-  event.preventDefault(); 
+  event.preventDefault();
 
   adicionarValor();
   mostrarPares();
@@ -8,19 +8,25 @@ meuFormulario.addEventListener("submit", function(event) {
 
 let vetor = [];
 
-function adicionarValor() {
+  function adicionarValor() {
+  function mostrarPares() {
+
   const valor = Number(document.getElementById('valor').value);
-  vetor.push(valor);
 
-  const tabela = document.getElementById('tabelaValores').getElementsByTagName('tbody')[0];
-  const novalinha = tabela.insertRow();
-  const celula = novalinha.insertCell();
-  celula.textContent = valor;
+  if(!isNaN(valor)) {
 
-  document.getElementById('valor').value = '';
+    vetor.push(valor);
+    const tabela = document.getElementById('tabelaValores').getElementsByTagName('tbody')[0];
+
+    const novalinha = tabela.insertRow();
+    const celula = novalinha.insertCell(0);
+    celula.textContent = valor;
+    document.getElementById('valor').value = '';
+    document.getElementById('valor').focus();
 }
 
-function mostrarPares() {
+  function adicionarValor(/adicionarValor); {
+  function mostrarPares(/mostrarPares); {
   const tabela = document.getElementById("tabelaPares").getElementsByTagName("tbody")[0];
 
 
@@ -33,4 +39,3 @@ function mostrarPares() {
     }
   }
 }
-
