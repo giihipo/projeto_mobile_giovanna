@@ -8,25 +8,19 @@ meuFormulario.addEventListener("submit", function(event) {
 
 let vetor = [];
 
-  function adicionarValor() {
-  function mostrarPares() {
-
+function adicionarValor() {
   const valor = Number(document.getElementById('valor').value);
+  vetor.push(valor);
 
-  if(!isNaN(valor)) {
+  const tabela = document.getElementById('tabelaValores').getElementsByTagName('tbody')[0];
+  const novalinha = tabela.insertRow();
+  const celula = novalinha.insertCell();
+  celula.textContent = valor;
 
-    vetor.push(valor);
-    const tabela = document.getElementById('tabelaValores').getElementsByTagName('tbody')[0];
-
-    const novalinha = tabela.insertRow();
-    const celula = novalinha.insertCell(0);
-    celula.textContent = valor;
-    document.getElementById('valor').value = '';
-    document.getElementById('valor').focus();
+  document.getElementById('valor').value = '';
 }
 
-  function adicionarValor(/adicionarValor); {
-  function mostrarPares(/mostrarPares); {
+function mostrarPares() {
   const tabela = document.getElementById("tabelaPares").getElementsByTagName("tbody")[0];
 
 
