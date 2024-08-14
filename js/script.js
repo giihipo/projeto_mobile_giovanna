@@ -1,10 +1,4 @@
-var meuFormulario = document.getElementById("formulario");
-meuFormulario.addEventListener("submit", function(event) {
-  event.preventDefault();
 
-  adicionarValor();
-  mostrarPares();
-});
 
 let vetor = [];
 
@@ -18,6 +12,7 @@ function adicionarValor() {
   celula.textContent = valor;
 
   document.getElementById('valor').value = '';
+  document.getElementById('valor').focus();
 }
 
 function mostrarPares() {
